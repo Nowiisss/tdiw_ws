@@ -2,42 +2,45 @@
 <html>
     <head>
         <!-- completa -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Escola d'Enginyeria</title>
+         <meta charset="UTF-8" />
+
+            <title> UAB/Enginyeria </title>
 
     </head>
     <body>
         <!-- SECCIÓ 1 - Capçalera -->
         <header>
             <!-- completa -->
-             <a href="https://www.uab.cat/" target="_blank"><img src="./img/uab.png" alt="Logo UAB" width="40%"> <!-- Empty tag --> </a>
-            <h1>Escola d'Enginyeria</h1>
-            <p>Benvingut/da a l'escola d'enginyeria de la UAB</p>
-            <hr />
+             <!-- <img src="./img/uab.png" alt="logo UAB" width="200px" a="http://www.uab.cat/"/> -->
+            <a href="http://www.uab.cat/" target="_blank"> <img src="img/uab.png" alt="logo UAB" width="40%"/> </a>
 
+            <h1>Escola d'Enginyeria</h1>
+
+            <p>Benvinguts a l'Escola d'Enginyeria de la UAB</p>
+
+
+            <hr/>
         </header>
         <!-- SECCIÓ 2 - Llistat dels diferents graus que ofereix l’escola d’enginyeria -->
         <section>
-
+            <header>
                 <h3>Graus disponibles: </h3>
+            </header>
             <ul>
                 <!-- completa -->
-                <li><a href="https://www.uab.cat/enginyeria" target="_blank">Eng. Informàtica</a>
-                
-                    <ul>
-                        <li>Tecnologies de la Informació</li>
-                        <li>ES</li>
-                        <li>Computació</li>
-                        <li>Computadors</li>
+                <li><a href="http://www.uab.cat/grauEI"> Enginyeria Informàtica</a>
+                 <ul>
+                    <li>Menció Enginyeria del software</li>
+                    <li>Menció Enginyeria de Computadors</li>
+                    <li>Menció Computació</li>
+                    <a href="mencions/TI/index.html"><li>Menció Tecnologies de la informació</li></a>
+                </ul>
+            </li>
+                <li>Enginyeria de Sistemes de Telecomunicació</li>
+                <li>Enginyeria Electrònica de Telecomunicació</li>
+                <li>Enginyeria Química</li>
 
-                    </ul>
-                
-                </li>
-                <li> Eng. Telecos sistemes</li>
-                <li> Eng. Telecos Electronica</li>
             </ul>
-            <hr>
         </section>
         <!-- SECCIÓ 3 - Formulari de registre -->
         <section>
@@ -47,20 +50,35 @@
             <p> Si us plau facilita'ns les teves dades </p>
             <form method="post" action="">
                 <!-- completa -->
-                <label for="nom">Nom:</label> <input type="text" name="nom" id="nom"> <br>
-                <label for="nom">Password:</label> <input type="text" name="password" id="password">
-                <br>
-                <label for="grau">Grau:</label> 
-                <select name="grau" id="grados" >
-                    <option value="1">Eng. Informàtica</option>
-                    <option value="2">Eng. Telecos sistemes</option>
-                    <option value="3">Eng. Telecos Electronica</option>
-                
-                    
-                </select>
-                <br>
-                <input type="submit" value="Registrar-se">
-                <br>
+            <!-- Nom complet: <input type="text" name="nom"> <br/>
+            Password: <input type="password" name="password"> <br/>
+            Grau:  <select name="graus">  MILLOR-->
+             <label for="nom">Nom complet: </label>    
+              <input type="text" name="nom" id="nom"><br />
+
+              <label for="password">Password: </label>
+              <input type="password" name="password" id="password"><br />
+
+            <label for="graus">Grau</label>
+            <select name="grau" id="graus" required>
+                <option value="Enginyeria Informàtica">Enginyeria Informàtica</option>
+                <option value="Enginyeria de Sistemes de Telecomunicació">Enginyeria de Sistemes de Telecomunicació</option>
+                <option value="Enginyeria Electrònica de Telecomunicació">Enginyeria Electrònica de Telecomunicació</option>
+                <option value="Enginyeria Química">Enginyeria Química</option>
+            </select>
+            <br/>
+
+            <p>Tria la menció que t'atreu més:</p>
+
+            <select name="mencions" id="mencions">
+
+                <option value="1">Menció Enginyeria del software</option>
+                <option value="2">Menció Enginyeria dels computadors</option>
+                <option value="3">Menció Computació</option>
+                <option value="3">Menció Tecnologies de la informació</option>
+            </select>
+            <br/> <br/>
+            <input type="submit" value="Registrar-me">
             </form>
             <hr />
         </section>
@@ -71,11 +89,39 @@
             </header>
             <table border="1">
                 <!-- completa -->
+                 <tr>
+                    <th colspan="2">Escola d'Enginyeria</th>
+                    <th colspan="2">Ciències</th>
+                 </tr>
+                 <tr>
+                    <td>Enginyeria Informàtica</td>
+                    <td>300</td>
+                    <td>Matemàtiques</td>
+                    <td>200</td>
+                 </tr>
+                 <tr>
+                    <td>Enginyeria de Sistemes de Telecomunicació</td>
+                    <td>150</td>
+                    <td rowspan="2">Física</td>
+                    <td rowspan="2">100</td>
+                </tr>
+                <tr>
+                    <td>Enginyeria Química</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td>750</td>
+                    <td>Total</td>
+                    <td>300</td>
+                </tr>
             </table>
         </section>
         <!-- SECCIÓ 5 - Peu de pàgina -->
         <footer>
             <!-- completa -->
+             <img src="./img/campus-e.png" width="35%">
+             <p>&copy;Universitat Autònoma de Barcelona. Campus d'Excel·lència</p>
         </footer>
     </body>
 </html>
